@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Template Practice</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <h1 id="title">This is a Survey</h1>
+  <p id="description">This is a description</p>
+</header>
+
+<form id="survey-form">
+  <label for "name" id="name-label">Name: </label>
+  <input 
+         type="text" 
+         id="name" 
+         name="name"
+         placeholder="Enter Name"
+         required
+         class="written-input"
+   />
+
+  <label for "email" id="email-label">Email: </label>
+  <input 
+         type="email" 
+         name="email"
+         id="email" 
+         placeholder="Enter email"
+         class="written-input"
+         required
+   />
+  <label for "number" id="number-label">Number of Cats: </label>
+  <input 
+         type="number" 
+         id="number" 
+         min="0"
+         max = "100"
+         placeholder="0"
+         class="written-input"
+  />
+  
+  <label for "dropdown" id="dropdown-label">Do you like cats?</label>
+  <select id="dropdown" class="written-input">
+    <option value="" selected disabled hidden>(Please pick yes)</option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+  
+  <div class="single-select">
+    <p id="question-single">How do you keep your cat?</p>
+    <label> 
+      <input
+         class="radio-option"
+         name="cat-keep"
+         type="radio"
+         value="Indoor"
+         checked
+      />
+      Indoor
+    </label>
+     <label> 
+      <input
+         class="radio-option"
+         name="cat-keep"
+         type="radio"
+         value="Outdoor"
+      />
+      Outdoor
+    </label>
+     <label> 
+      <input
+         class="radio-option"
+         name="cat-keep"
+         type="radio"
+         value="in-out"
+      />
+      Both In and Out
+    </label>
+  </div>
+  
+  <div class="select-multiple">
+    <p id="check-question">What food does your cat like to eat?</p>
+    <label>
+      <input
+        class="check-option"
+        type="checkbox"
+        value="Salmon"
+      /> Salmon
+    </label>
+    <label>
+      <input
+        class="check-option"
+        type="checkbox"
+        value="Chicken"
+      /> Chicken
+    </label>
+    <label>
+      <input
+        class="check-option"
+        type="checkbox"
+        value="Turkey"
+      /> Turkey
+    </label>
+    <label>
+      <input
+        class="check-option"
+        type="checkbox"
+        value="Beef"
+      /> Beef
+    </label>
+    <label>
+      <input
+        class="check-option"
+        type="checkbox"
+        value="White-fish"
+      /> White Fish
+    </label>
+  </div>
+  
+  <div class="text-area">
+    <p id="text-question">Tell me more about your cat</p>
+    <textarea
+          placeholder="Meow"    
+     ></textarea>      
+  </div>
+  
+  <button
+    type="submit"
+    id="submit"
+  >Submit</button>
+  
+</form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
